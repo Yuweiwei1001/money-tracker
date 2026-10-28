@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "main": "expo-router/entry",
   "dependencies": {
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-community/datetimepicker": "9.2.1",
     "expo": "~58.0.17",
+    "expo-clipboard": "~58.0.4",
     "expo-constants": "~58.0.13",
+    "expo-document-picker": "~58.0.4",
+    "expo-file-system": "~58.0.11",
     "expo-font": "~58.0.9",
     "expo-linking": "~58.0.14",
     "expo-router": "~58.0.25",
+    "expo-sharing": "~58.0.20",
     "expo-splash-screen": "~58.0.11",
+    "expo-sqlite": "~58.0.14",
     "expo-status-bar": "~58.0.4",
     "expo-symbols": "~58.0.4",
     "expo-web-browser": "~58.0.6",
@@ -23,13 +30,17 @@
   },
   "devDependencies": {
     "@types/react": "~19.3.0",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~58.0.4",
     "typescript": "~6.0.3"
   },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit"
   },
   "private": true
 }
